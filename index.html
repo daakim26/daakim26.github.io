@@ -1,283 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Jonathan Shuai's Portfolio</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Poppins|Ubuntu|Work+Sans" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpg" href="./img/favicon.jpg" />  
-</head>
-<body>
-
-
-    <div class="menu-container">
-        <ul id="menu" class="shadow">
-            <li><a class="text" href="#about">About</a></li>
-            <li><a class="text" href="#education">Education</a></li>
-            <li><a class="text" href="#projects">Projects</a></li>
-            <li><a class="text" href="#experience">Experience</a></li>
-            <li><a class="text" href="#skills">Skills</a></li>
-            <!-- <li><a class="text" href="#">Contact</a></li> -->
-        </ul>
-    </div>
-
-    <header>
-        <div class="inner-header">
-            <h1 class="name">
-                JONATHAN SHUAI
-            </h1>
-            <h2 class="subtitle">
-                Computer Science
-            </h2>
-            <h3 class="address">
-                jonathanshuai0@gmail.com
-            </h3> 
-            <a class="resume-button" 
-                href="https://drive.google.com/file/d/1pvlmTJtzkVq1UDoT8fj-JUHoGStwWZRR/view?usp=sharing">
-                View Resume
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Velvet Spectrum CSS -->
+        <link rel="stylesheet" href="./css/vsmain.css" type="text/css">
+        <link rel="stylesheet" href="./css/1ff5f270a7b39ae1220710fe6269d5421592937680.css" type="text/css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">김다인</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
             </a>
-
-
-        </div>
-    </header>
-
-    <!-- About -->
-    <div id="about" class="content about">
-            <h1 class="title">About</h1>
-            <hr class="short">
-            <p class="about">
-                Last year, I graduated from the University of California, San Diego with a Bachelor's in Computer Science. I love programming in Python and Java, and am really enthusiastic software engineering with a focus in machine learning. I also completed a data science bootcamp with Springboard Data Science, where I've worked on several machine learning projects.
-            </p>
-    </div>
-    <!-- /About -->
-
-    <!-- Education -->
-    <div id="education" class="content education">
-        <h1 class="title">Education</h1>
-        <hr class="short">
-
-        <div class="education-card">
-            <h2 class="education-title">
-                Springboard Data Science Career Track
-            </h2>
-            <h2 class="education-date">
-                (April 2018 - September 2018)
-            </h2>
-            <h3 class="education-subtitle">
-                Data Science Bootcamp
-            </h3>
-            <p class="education-details">
-                Online bootcamp for data science. Took 600+ hours of courses in machine learning algorithms, statistical analysis, visualization, and data wrangling. I also worked with a mentor on two capstone projects where I apply these skills in practice.
-            </p>
-        </div>
-
-        <div class="education-card">
-            <h2 class="education-title">
-                University of California, San Diego
-            </h2>
-            <h2 class="education-date">
-                (September 2014 - December 2017)
-            </h2>
-
-            <h3 class="education-subtitle">
-                Bachelor of Science, Computer Science
-            </h3>
-          <!--   <p class="education-details">
-            </p> -->
-        </div>
-    </div>
-    <!-- /Education -->
-    
-    <!-- Project -->
-    <div id="projects" class="content projects">
-        <h1 class="title">Projects</h1>
-        <hr class="short">
-        <div class="project-card shadow">
-            <div style="background: url('./img/veggie.jpg');" class="project-img"></div>
-            <div class="project-text-outer">
-                <div class="project-text-inner">
-                    <h2 class="project-title">
-                        Capstone Project 2: Recipes From Food Images
-                    </h2>
-                    <h2 class="project-date">
-                        2018
-                    </h2>
-                    <p class="project-text">
-                        In this project, I use PyTorch and transfer learning to train a convolutional neural network to recognize and identify food items in images. The model recognizes 52 food items with over 92% accuracy on the validation set. Using Angular and Flask, I made a simple web application to give recipe suggestions based off images of ingredients. We often have leftover ingredients that are thrown out because we don't know what to do with them.  I envision this kind of technology helping with food waste issues, as well as being used in smart fridges or as a phone app.  
-                    </p>
-                    <a href="https://github.com/jonathanshuai/springboard-capstone2" class="project-link"> View Project On GitHub </a>
-                    <a href="https://youtu.be/I17lKgTJVYI" class="project-link"> View Demo On YouTube </a>
-                    
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
             </div>
-        </div>
-
-        <div class="project-card shadow">
-            <div style="background: url('./img/gun.png');" class="project-img"></div>
-            <div class="project-text-outer">
-                <div class="project-text-inner">
-                    <h2 class="project-title">
-                        Capstone Project 1: Gun Violence Trend Modeling
-                    </h2>
-                    <h2 class="project-date">
-                        2018
-                    </h2>
-                    <p class="project-text">
-                        This project explores violence trends in the United States and how various features such as income, substance abuse, gun control provisions, and other crime affect these trends. I use Python to consolidate and clean data, create visualizations, analyze trends and correlations, and make predictive models to determine which states will see an increase in gun violence. 
-                    </p>
-                    <a href="https://github.com/jonathanshuai/springboard-capstone1" class="project-link"> View Project On GitHub </a>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Diane "Caroline" Kim
+                        <span class="text-primary">김다인</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        서울시 · 강남구 *** · 010-8938-**** ·
+                        <a href="mailto:daakim26@gmail.com">daaki***@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I like babies and am an experienced baby tutor.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/da-in-kim-77bb581b1/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/daakim26"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="project-card shadow">
-            <div style="background: url('./img/face.gif')" class="project-img"></div>
-
-            <div class="project-text-outer">
-                <div class="project-text-inner">
-                    <h2 class="project-title">
-                        Playing With Face Recognition
-                    </h2>
-                    <h2 class="project-date">
-                        2018
-                    </h2>
-                    <p class="project-text">
-                        Simple exploration with facial recognition algorithms including preprocessing techniques, eigenfaces, and deep learning techniques. Applied facial recognition to music videos to help identify celebrities in pop groups.
-                    </p>
-                    <a href="https://github.com/jonathanshuai/face-detection-test" class="project-link"> View Project on GitHub </a>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">규제연구센터 논문 한영 번역</h3>
+                            <div class="subheading mb-3">한국개발연구원</div>
+                            <p>2020년 1월 및 2020년 4월, 총 두 차례 한국개발연구원 규제연구센터 (Korea Development Institute) 소속 김정욱 소장님께 두 편의 논문 ‘환경 규제에 따른 지역효과 분석 (Regional Patterns of Effect from Environmental Regulation)’, ‘외국인 관광수요 결정요인 연구 (A Study on the Determinants of Tourism Demand of Foreigners- An Analysis on Panel Data Using the Gravity Model)’ 한영 번역을 의뢰 받아 한글 논문을 영어로 번역하는 업무를 진행한 바 있습니다.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">1월 2020 - </span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">기자</h3>
+                            <div class="subheading mb-3">한국문화정보원 문화포털</div>
+                            <p>문화체육관광부 산하 한국문화정보원 소속 기자로서, 자체 운영 블로그 채널 ‘문화포털’에서 국내 다양한 문화 행사 정보 및 문화의 우수성을 알리는 기사 를 기획, 작성 및 포스팅 하였습니다. 작성한 6편의 기사 중 2편의 기사, ‘문화 생활 누리고 소득공제 받자!- 문화비소득공제’ 및 ‘신비의 보물을 찾아서-황 금문명 엘도라도’가 문화포털 홈페이지 내 ‘공감리포트’ 및 문화포털 네이버 블로그 ‘문화추천: 문화생활+’의 대표 기사로 등재되었으며, 각 33개와 46개 의 공감수 및 다수의 댓글을 기록하는 등 많은 문화인들의 공감과 흥미를 이끌 어낼 수 있었습니다.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">6월 2018 - 12월 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Debate & PR</h3>
+                            <div class="subheading mb-3">교내 영어 의회식 토론동아리 DAE 토론자 및 임원 (PR)</div>
+                            <p>홍보 담당자로 활동할 당시 교내 학생들 뿐 아닌 외국인 교환학생들도 큰 관심을 보이며 동아리에 지원하였고, 크리스마스 기념 단체사진 촬영, 서프라이즈 회식 등 시즌별로 팀원들의 사기를 높이고 친목을 도모할 수 있는 다양한 활동들을 성 황리에 마칠 수 있었습니다.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">6월 2018 - 6월 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Contents Creating, Mentoring</h3>
+                            <div class="subheading mb-3">비영리단체 WeMajor 소속 강연 기획 및 멘토링 봉사</div>
+                            <p>학생들에게 올바른 전공 정보를 전달하여 진로에 대한 고민을 덜어주고자 서울 소재 대학의 대학생들이 모여 만든 서울시 소속 비영리 민간 전공 강연 단체 위메 이저에서 봉사자로 활동한 바 있습니다. 제 주전공인 영어영문학에 대한 흔한 오해, 학습하는 과목, 과목 맛보기, 추천하는 학생 유형, 진로 방향 등의 주제를 담은 강연 PPT 컨텐츠와 카드뉴스, 학과 페이퍼를 직접 기획 및 제작하였고 약 4개 월에 걸친 디자인, 컨텐츠 아이디어 회의 및 강의 시연 과정을 마친 후, 전국의 중 고등학교를 다니며 약 5회 가량의 전공 강연 봉사 및 멘토링을 진행하면서 학생들의 학업에 동기를 부여하고 진로 선택에 도움을 주고자 노력하였습니다. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">3월 2018 - </span></div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="project-card shadow">
-            <div style="background: url('./img/flight.png')" class="project-img"></div>
-
-            <div class="project-text-outer">
-                <div class="project-text-inner">
-                    <h2 class="project-title">
-                        Flight Delay Predictions
-                    </h2>
-                    <h2 class="project-date">
-                        2017
-                    </h2>
-                    <p class="project-text">
-                        I worked with a partner to analyze flight delays as a project final for a data science course in college. We used United States flight delay information from 2015 for this project, examining trends and looking at delays for 14 airlines and 322 airports. We then implemented a predictive model to predict whether a flight would be delayed by over 15 minutes with a ~79% accuracy without any information about the weather.  
-                    </p>
-                    <a href="https://drive.google.com/file/d/1HAwG6FTjxXNYOIoB9FT0pnRUbEzYCO_J/view?usp=sharing" class="project-link"> View Summary PDF </a>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">이화여자대학교</h3>
+                            <div class="subheading mb-3">인문과학대학<br></div>
+                            <div>영어영문학부<br>경영대학 경영학부</div>
+                            <p>GPA: 4.5</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2017년 3월 - 2021년 8월</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">한영외국어고등학교</h3>
+                            <div class="subheading mb-3">25기 영어과</div>
+                            <p>GPA: 4.5</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2014년 3월 - 2017년 2월</span></div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Software and Skills</div>
+                    <ul class="list-inline dev-icons">
+                        <!-- <li class="list-inline-item"><i class="fab fa-adobe"></i></li> -->
+                        <!-- <li class="list-inline-item"><i class="fab fa-microsoft"></i></li> -->
+                        <!-- <li class="list-inline-item"><i class="fab fa-youtube"></i></li> -->
+                        <li class="list-inline-item"><img src="assets/img/svg/adobe-illustrator-cc.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/adobe-photoshop-cc.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/office-1.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/word-1.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/excel-4.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/powerpoint-2.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/microsoft-access-1.svg" height="54" width="54"/></li>
+                        <li class="list-inline-item"><img src="assets/img/svg/microsoft-windows-22.svg" height="54" width="54"/></li>
 
-        <div class="project-card shadow">
-            <div style="background: url('./img/fapp.png')" class="project-img"></div>
-
-            <div class="project-text-outer">
-                <div class="project-text-inner">
-                    <h2 class="project-title">
-                        Food App
-                    </h2>
-                    <h2 class="project-date">
-                        2016
-                    </h2>
-                    <p class="project-text">
-                        I worked in a group of 10 peers to develop an Android social media app dedicated to food pictures. We learned and used the React Native framework over a time frame of 10 weeks. My role was to manage the database and queries as well as implement features such as friends lists, comments, and likes. I gained valuable experience working with a group to meet deadlines in a fast paced working environment. 
-                    </p>
-                    <a href="https://github.com/Johj/fapp" class="project-link"> View Project On GitHub </a>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Strong communication and interpersonal skills
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Creative, insightful, and detail oriented
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Very Professional
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cute
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>i love black licorice</p>
+                    <p class="mb-0">bananas are tasty</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+            <!-- Projects-->
+            <section class="pre-project-section" id="projects">
+                <h2 class="mb-0">Projects</h2>
+            </section>
+            <section class="project-covers" data-context="page.gallery.covers">
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://goolge.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/santa.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/dae.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/reading.png" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/mentoring.png" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/granola.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/1.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/2.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/3.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/4.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/5.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/6.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+                <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://google.com/" data-context="pages" data-hover-hint="galleryPageCover">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+                    <img class="cover__img js-lazy image-loaded" src="./assets/img/project/7.jpg" 
+                     sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1400px / 4)">
+                            </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                        </div>
+                      </div>
+                    </div>
+                </a>
+
+            </section>
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            MOS 2016 Master (Microsoft Excel, Word, PowerPoint, Access), 2020.04
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            iBT TOEFL 115/120 (RC: 29, LC: 28, S: 29, W: 29), 2018. 08
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            운전면허 (2종 보통), 2017. 01
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - best big sister figure ever
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </div>
-    <!-- /Project -->
-
-
-    <!-- Experience -->
-    <div id="experience" class="content experience">
-        <h1 class="title">Experience</h1>
-        <hr class="short">
-
-        <div class="experience-card">
-            <h2 class="experience-title">
-                Abiocode, Inc.
-            </h2>
-            <h2 class="experience-date">
-                (Summer 2016)
-            </h2>
-            <h3 class="experience-subtitle">
-                Intern (Software Engineering) 
-            </h3>
-            <ul class="experience-details"> 
-                <li>Intern as programmer at biotech firm.</li>                                                        
-                <li>Performed basic website administration tasks including monitoring and analysis, looking through audit logs configuration changes, and troubleshooting.</li>
-                <li>Developed program using Java and Selenium to search PubMed site to retrieve target e-mails and match them with scientist names, recognizing 14 external journals.</li>                                                        
-                <li>Wrote program to consolidate product inventory information spreadsheets from Abiocode website.</li>                                                        
-            </ul>
-        </div>
-        <div class="experience-card">
-            <h2 class="experience-title">
-                Global TIES, Design For Development
-            </h2>
-            <h2 class="experience-date">
-                (September 2016 - December 2017)
-            </h2>
-            <h3 class="experience-subtitle">
-                College Membership 
-            </h3>
-            <ul class="experience-details"> 
-                <li>Worked with various non-profit organizations to provide engineering solutions to meet clients' needs in an iterative process.</li>
-                <li>Worked in a group of 7 over a 10 weeks to make major improvements to a Unity game focused on teaching children in grades K-12 about healthy eating habits.</li>
-                <li>Designed a lesson plan for middle school students to teach them about environmental issues.</li>                                                        
-            </ul>
-        </div>   
-    </div>
-    <!-- /Experience -->
-
-
-    <!-- Skills -->
-    <div id="skills" class="content skills">
-        <h1 class="title">Skills</h1>
-        <hr class="short">
-        <ul id="skills-list">
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Java</li>
-            <li>Software Engineering</li>
-            <li>Linux</li>
-            <li>SQL</li>
-            <li>Data Analysis</li>
-        </ul> 
-    </div>
-    <!-- /Skills -->
-
-
-    <!-- Contact -->
-  <!--   <div id="contact" class="content contact">
-        <h1 class="title">Contact</h1>
-        <hr class="short">
-    </div> -->
-    <!-- /Contact -->
-
-    <footer>
-        <p class="footer-text">
-            © 2018 Jonathan Shuai
-        </p>
-        <div class="icon-container">
-            <a class="icon" href="https://www.linkedin.com/in/jonathan-shuai-a19508126/"><i class="fa fa-linkedin"></i></a>
-            <a class="icon" href="https://github.com/jonathanshuai"><i class="fa fa-github"></i></a>
-            <a class="icon" href="https://www.facebook.com/jonathanshuai"><i class="fa fa-facebook"></i></a>
-        </div>
-    </footer>
-  
- </body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
